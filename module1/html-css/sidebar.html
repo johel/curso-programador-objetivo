@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Curso Programador Objetivo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        border: 3px solid orange;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .caixa2 {
+        border: 3px solid red;
+        width: 200px;
+      }
+
+      .caixa3 {
+        flex: 1;
+        border: 3px solid red;
+        min-width: 200px;
+      }
+      .caixa4 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex: 3;
+        border: 3px solid red;
+        width: 100px;
+      }
+
+      .minicaixa1 {
+        background-color: chartreuse;
+      }
+
+      .minicaixa2 {
+        background-color: purple;
+      }
+
+      .minicaixa3 {
+        background-color: darkcyan;
+      }
+
+      .minicaixa {
+        width: 100px;
+        height: 100px;
+        flex-wrap: wrap;
+        min-width: 100px;
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        clear: both;
+        display: flex;
+        flex-direction: row;
+        height: 1000px;
+        border: 3px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="google.com">Google</a>
+      <a href="facebook.com">Facebook</a>
+      <a href="instagram.com">Instagram</a>
+      <a href="pinterest.com">Pinterest</a>
+      <a href="quora.com">Quora</a>
+    </div>
+    <div id="containerPrincipal" class="container">
+      <div class="caixa2">
+        Sidebar(largura fixa de 200px)
+        <ul>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+        </ul>
+      </div>
+      <div class="caixa3">Caixa3 - Proporção 1</div>
+      <div class="caixa4">
+        <div class="minicaixa minicaixa1">1</div>
+        <div class="minicaixa minicaixa2">2</div>
+        <div class="minicaixa minicaixa3">3</div>
+        <div class="minicaixa minicaixa3">3</div>
+        <div class="minicaixa minicaixa3">3</div>
+        <div class="minicaixa minicaixa3">3</div>
+        <div class="minicaixa minicaixa3">3</div>
+        <div class="minicaixa minicaixa3">3</div>
+        <div class="minicaixa minicaixa3">3</div>
+        <div class="minicaixa minicaixa3">3</div>
+      </div>
+    </div>
+  </body>
+</html>

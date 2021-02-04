@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Curso Programador Objetivo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        border: 3px solid orange;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .caixa2 {
+        border: 3px solid red;
+        width: 200px;
+      }
+
+      .caixa3 {
+        flex: 1;
+        border: 3px solid red;
+        min-width: 200px;
+      }
+
+      .container {
+        clear: both;
+        display: flex;
+        flex-direction: row;
+        height: 700px;
+        border: 3px solid blue;
+      }
+
+      .footer {
+        height: 300px;
+        border: 3px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="google.com">Google</a>
+      <a href="facebook.com">Facebook</a>
+      <a href="instagram.com">Instagram</a>
+      <a href="pinterest.com">Pinterest</a>
+      <a href="quora.com">Quora</a>
+    </div>
+    <div id="containerPrincipal" class="container">
+      <div class="caixa2">
+        Sidebar(largura fixa de 200px sem flex)
+        <ul>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+        </ul>
+      </div>
+      <div class="caixa3">
+        Caixa3 - Flex 1 abarca toda a largura restante na ausência de um irmão
+        com flex tb
+      </div>
+    </div>
+    <div class="footer">Footer</div>
+  </body>
+</html>
