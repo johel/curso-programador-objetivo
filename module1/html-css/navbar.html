@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Curso</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* 0 0 1 */
+      body {
+        margin: 0px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* 0 1 0 */
+      .navbar {
+        /* background-color: #3f51b5; */
+        /* background-color: red; */
+        padding: 16px 24px;
+        border: 1px solid red;
+        display: flex;
+        margin-bottom: 12px;
+      }
+
+      .logo {
+        width: 100px;
+        flex: 0;
+      }
+
+      .links {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      /* 0 1 0 */
+      .link {
+        margin-right: 16px;
+        color: green;
+        transition: color 0.5s ease;
+        padding-bottom: 16px;
+      }
+
+      /* 0 1 1 */
+      .link:visited {
+        color: orange;
+      }
+
+      /* 0 1 1 */
+      .link:hover {
+        color: red;
+        border-bottom: 2px solid violet;
+      }
+
+      /* 0 1 1 */
+      .link:active {
+        color: blue;
+      }
+
+      /* 0 2 1 */
+      .link.teste:hover {
+        color: rgb(255, 0, 255);
+      }
+
+      /* 1 0 1  */
+      #link1:hover {
+        color: purple;
+      }
+
+      /* 0 1 0 */
+      .big-text {
+        font-size: 36px;
+      }
+
+      /* 0 1 0 */
+      .big-header {
+        font-size: 48px;
+      }
+
+      /* 0 1 1 */
+      h1:last-child {
+        font-size: 24px;
+      }
+
+      /* 1 0 0 */
+      #my-header {
+        font-size: 48px;
+      }
+
+      h1 {
+        font-size: 12px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">Logo</div>
+      <div class="links">
+        <a
+          id="link1"
+          class="link teste"
+          href="https://www.google.com/"
+          target="_blank"
+          >Google</a
+        >
+        <a class="link teste" href="https://www.google.com/" target="_blank"
+          >Google</a
+        >
+        <a class="link" href="https://www.google.com/" target="_blank"
+          >Google</a
+        >
+      </div>
+    </div>
+    <div>Corpo da página</div>
+    <div class="big-text">
+      <h1 id="my-header" class="big-header">elemento de texto grande</h1>
+    </div>
+  </body>
+</html>

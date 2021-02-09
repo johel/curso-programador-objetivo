@@ -12,6 +12,10 @@
       .container {
         border: 2px solid red;
         padding: 24px;
+        display: flex;
+        height: 500px;
+        align-items: center;
+        flex-direction: column;
       }
 
       .box {
@@ -20,17 +24,26 @@
         background-color: #8cacea;
         margin: 8px;
       }
+
+      .box1 {
+        flex: 3;
+      }
+
+      .box2 {
+        flex: 2;
+      }
+
+      .box3 {
+        flex: 1;
+      }
     </style>
   </head>
   <body>
-    <div>
-      Qual a propriedade de CSS para se inserir na classse container tal que as
-      caixas fiquem dispostas horizontalmente?
-    </div>
+    <div>Centralizar os textos horizontalmente e verticalmente</div>
     <div class="container">
-      <div class="box">Box</div>
-      <div class="box">Box</div>
-      <div class="box">Box</div>
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
     </div>
   </body>
 </html>

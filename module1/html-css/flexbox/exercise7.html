@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Curso Programador Objetivo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 2px solid red;
+        padding: 24px;
+        display: flex;
+        height: 500px;
+        align-items: center;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: #8cacea;
+        margin: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box1 {
+        /* flex: 3; */
+        width: 200px;
+        min-width: 200px;
+        align-self: flex-end;
+      }
+
+      .box2 {
+        flex: 2;
+      }
+
+      .box3 {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Fazer com que o box1 tenha uma largura fixa e mínima de 200px;</div>
+    <div class="container">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+    </div>
+  </body>
+</html>
