@@ -20,12 +20,6 @@
         display: flex;
       }
 
-      .sidebar {
-        width: 150px;
-        background-color: blue;
-        border: 3px solid brown;
-      }
-
       .container {
         flex: 1;
         padding: 24px;
@@ -50,16 +44,41 @@
         text-align: center;
         width: 50%;
         margin: 0 auto;
+        border-radius: 4px;
+      }
+
+      .sidebar {
+        width: 150px;
+        background-color: blue;
+        border: 3px solid brown;
+        padding: 8px;
+      }
+
+      .sidebar-list {
+        padding: 0px;
+        list-style-type: none;
+      }
+
+      .sidebar-item {
+        margin-bottom: 8px;
+      }
+
+      input {
+        width: 100px;
+        border-radius: 4px;
       }
     </style>
   </head>
   <body>
     <div class="page">
       <div class="sidebar">
-        <ul>
-          <li><a href="#">link1</a></li>
-          <li><a href="#">link2</a></li>
-          <li><a href="#">link3</a></li>
+        <div>
+          <input type="text" placeholder="Full Name" />
+        </div>
+        <ul class="sidebar-list">
+          <li class="sidebar-item"><a href="#">link1</a></li>
+          <li class="sidebar-item"><a href="#">link2</a></li>
+          <li class="sidebar-item"><a href="#">link3</a></li>
         </ul>
       </div>
       <div class="container">
