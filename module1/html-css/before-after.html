@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Curso Programador Objetivo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .quote {
+        border-left: 10px solid #aaa;
+        padding: 12px;
+        background-color: #ddd;
+        transition: background-color 0.5s ease;
+        cursor: pointer;
+      }
+
+      .quote:hover {
+        background-color: #ccc;
+      }
+
+      .quote:before {
+        color: red;
+        content: "⭐️";
+        font-size: 1em;
+        line-height: 0.1em;
+        margin-right: 0.1em;
+        vertical-align: 0.4em;
+      }
+
+      .teste::before {
+        content: "antes";
+      }
+      .teste::after {
+        content: "depois";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div>
+        <h3>Before and After</h3>
+        <div class="teste">
+          <h3>h3</h3>
+        </div>
+      </div>
+      <div>
+        <blockquote class="quote">
+          Esta é uma citação tirada da Mozilla Developer Center.
+        </blockquote>
+      </div>
+    </div>
+  </body>
+</html>
