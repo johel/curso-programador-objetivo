@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Curso Programador Objetivo</title>
+    <style>
+      .parent {
+        border: 2px solid red;
+        height: 1500px;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+      }
+
+      .link {
+        text-decoration: none;
+        color: black;
+      }
+
+      .link:hover {
+        color: green;
+      }
+
+      .linkContainer {
+        margin-right: 32px;
+        position: relative;
+      }
+
+      .counter {
+        border-radius: 50%;
+        font-size: 12px;
+        padding: 4px 8px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+
+      .blue {
+        background-color: blue;
+        z-index: 7;
+      }
+
+      .crimson {
+        background-color: crimson;
+        z-index: 6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="navbar">
+        <div class="linkContainer">
+          <span class="counter crimson">1</span>
+          <span class="counter blue">2</span>
+
+          <a class="link" href="#">Link</a>
+        </div>
+        <div class="linkContainer"><a class="link" href="#">Link</a></div>
+        <div class="linkContainer"><a class="link" href="#">Link</a></div>
+      </div>
+    </div>
+  </body>
+</html>
