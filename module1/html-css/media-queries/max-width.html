@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Curso Programador Objetivo</title>
+    <style>
+      .page {
+        border: 16px solid green;
+        height: 1500px;
+      }
+
+      .pricing-container {
+        padding: 24px;
+        background-color: #3359ac;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .price-card {
+        background-color: #fff;
+        min-width: 200px;
+        height: 250px;
+        text-align: center;
+        padding-top: 16px;
+        color: #003097;
+        font-size: 40px;
+        margin-bottom: 0px;
+      }
+
+      .addons-container {
+        background-color: #058c78;
+        padding: 100px 0;
+      }
+
+      .box {
+        width: 80%;
+        height: 100px;
+        background-color: yellow;
+        margin: 0 auto;
+      }
+
+      /* no less than 480px, no greater than 720px */
+      @media (min-width: 480px) and (max-width: 720px) {
+        .page {
+          border: 16px solid black;
+        }
+
+        .pricing-container {
+          display: block;
+          background-color: rgb(185, 82, 82);
+        }
+
+        .price-card {
+          font-size: 32px;
+          margin-bottom: 20px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .page {
+          border: 16px solid red;
+        }
+
+        .pricing-container {
+          display: block;
+          background-color: rgb(185, 82, 82);
+        }
+
+        .price-card {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="pricing-container">
+        <div class="price-card">Pro</div>
+        <div class="price-card">Premium</div>
+        <div class="price-card">Fre</div>
+      </div>
+      <div class="addons-container">
+        <div class="box">box1</div>
+      </div>
+    </div>
+  </body>
+</html>
