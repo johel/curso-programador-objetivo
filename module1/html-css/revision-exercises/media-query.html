@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Curso Programador Objetivo</title>
+    <style>
+      .parent {
+        height: 400px;
+        background-color: orchid;
+      }
+
+      @media screen and (min-width: 480px) {
+        .parent {
+          background-color: red;
+        }
+      }
+
+      @media screen and (min-width: 720px) {
+        .parent {
+          background-color: orange;
+        }
+      }
+
+      @media screen and (min-width: 1080px) {
+        .parent {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      Altura da caixa:400px - breakpoints: 480px, 720px e 1080px
+    </div>
+  </body>
+</html>
