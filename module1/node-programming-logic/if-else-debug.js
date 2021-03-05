@@ -86,6 +86,39 @@ function ugabuga(n) {
 
 // dica: usar text.length e text.includes("something")
 
+function includesExactlyMar(text) {
+  return text.includes("mar");
+}
+
+function includesAnyMar(text) {
+  return text.toLowerCase().includes("mar");
+}
+
+function hasAtLeastTenCharacters(text) {
+  return text.length >= 10;
+}
+
+function largeMar(text) {
+  var result;
+  if (includesAnyMar(text) && hasAtLeastTenCharacters(text)) {
+    result = "largeMar";
+  } else if (includesAnyMar(text)) {
+    result = "mar";
+  } else if (hasAtLeastTenCharacters(text)) {
+    result = "large";
+  } else {
+    result = "nra";
+  }
+
+  return result;
+}
+
+largeMar("MARÍTIMOOOOOOO");
+
+//
+//
+//
+
 function nestedFunction() {
   var a = getA();
   var b = getB(a);
@@ -107,4 +140,4 @@ function getC(a, b) {
   return a * b;
 }
 
-nestedFunction();
+// nestedFunction();
