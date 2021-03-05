@@ -84,6 +84,8 @@ function ugabuga(n) {
 // ex: // largeMar("programar é legal") => "largeMar"
 // ex: // largeMar("nenhuma") => "nra"
 
+// dica: usar text.length e text.includes("something")
+
 function nestedFunction() {
   var a = getA();
   var b = getB(a);
