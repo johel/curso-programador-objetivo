@@ -79,7 +79,7 @@ function push() {
   console.log(a);
   a.push(2);
   console.log(a);
-  a[2] = 3;
+  a[0] = 3;
   console.log(a);
 }
 
