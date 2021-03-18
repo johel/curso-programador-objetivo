@@ -198,4 +198,28 @@ const usuariosComTaxas = usuarios.map((user) => {
 });
 
 // Tarefa de Casa
-// const IMCs = usuarios.filter(funcaoMapeadoraDeIMC);
+// const IMCs = usuarios.map(funcaoMapeadoraDeIMC);
+
+// function calculaImc(weight, height){
+//   return weight / (height * height);
+// }
+
+const calculaImc = (weight, height) => {
+  return weight / (height * height);
+};
+
+function getUserImc(user) {
+  return calculaImc(user.weight, user.height);
+}
+
+const listaImcUsuarios = usuarios.map(getUserImc);
+
+const listaImcUsuarios = usuarios.map((usuario) => {
+  return calculaImc(usuario.weight, usuario.height);
+});
+
+const listaImcUsuarios = usuarios.map((usuario) => {
+  return usuario.weight / (usuario.height * usuario.height);
+});
+
+console.log(listaImcUsuarios);
