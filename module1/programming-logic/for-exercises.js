@@ -5,7 +5,7 @@
 // Problema 3: Criar uma função que retorna a soma dos
 // numeros pares de 1 a 50
 
-// Problema 4: Criar a função print que imŕime os elementos de uma lista,
+// Problema 4: Criar a função print que imprime os elementos de uma lista,
 
 // Problema 5: Criar a função sum que soma os elementos de uma lista,
 // ex: sum([1,4,5]) => 10
