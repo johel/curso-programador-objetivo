@@ -31,6 +31,8 @@
 // Ex: 5!(5 fatorial) = 5 * 4 * 3 * 2 *1
 
 // 12. Criar uma função que verifica se um número natural é primo ou não.
+// Dica: Um número N é primo se ele não for divisível por nenhum numero
+// de 2 a N-1.
 
 // 13. Criar uma função que reverte uma palavra. Usar o for.
 // ex: revertWord("texto") => "otxet"
