@@ -118,4 +118,31 @@ function mdc(n1, n2) {
   return mdc;
 }
 
-mdc(12, 20);
+const esquemaDePrecosNaPlataforma = {
+  precoDeAcessoAoCurso: 100,
+  precoDaHoraDoTutor: 75,
+  qtdDeHorasDoTutor: 5,
+  precoDoCertificado: 100,
+};
+
+const esquemaDePrecosParaVoces = {
+  precoDeAcessoAoCurso: 50,
+  precoDaHoraDoTutor: 25,
+  qtdDeHorasDoTutor: 0,
+  precoDoCertificado: 25,
+};
+
+function precoTotalPorCurso(esquemaDePrecos) {
+  const precoTotalPorCurso =
+    esquemaDePrecos.precoDeAcessoAoCurso +
+    esquemaDePrecos.qtdDeHorasDoTutor * esquemaDePrecos.precoDaHoraDoTutor +
+    esquemaDePrecos.precoDoCertificado;
+
+  return precoTotalPorCurso;
+}
+
+const precoPlataforma = 6 * precoTotalPorCurso(esquemaDePrecosNaPlataforma);
+const precoParaVoces = 6 * precoTotalPorCurso(esquemaDePrecosParaVoces);
+
+console.log("precoPlataforma", precoPlataforma);
+console.log("precoParaVoces", precoParaVoces);

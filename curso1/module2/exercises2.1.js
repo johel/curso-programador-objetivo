@@ -20,6 +20,7 @@
 
 // 8. Criar uma função que retorna a quantidade de caracteres
 // de um texto qualquer.
+// IMPORTANTE:  na contagem, não considere espaços em branco, como caracter!
 
 // 9. Criar uma função que retorna o primeiro dígito
 // de um numero inteiro positivo qualquer.
